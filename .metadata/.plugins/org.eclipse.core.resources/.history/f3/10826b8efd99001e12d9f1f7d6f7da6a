@@ -1,0 +1,12 @@
+package com.sanjit549.com;
+
+import org.apache.logging.log4j.util.StringBuilderFormattable;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class FirstController {
+    
+	public String fisrt() {
+		return "
+	}
+}
