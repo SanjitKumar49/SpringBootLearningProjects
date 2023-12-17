@@ -6,10 +6,11 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\91635\Downloads\Spring-Boot-master\bootjpa7"/>
 			<item value="C:\Users\91635\Spring Boot\springboot_restapi_usingMySql"/>
+			<item value="C:\Users\91635\Downloads\Spring-Boot-master\bootjpa"/>
 			<item value="C:\Users\91635\Downloads\Spring-Boot-master\bootjpa4"/>
 			<item value="C:\Users\91635\Downloads\Spring-Boot-master\bootjpa2"/>
-			<item value="C:\Users\91635\Downloads\Spring-Boot-master\bootjpa"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
