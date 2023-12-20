@@ -21,13 +21,6 @@ public class StudentController {
 	@Autowired
 	StudentDao studentDao;
 	
-	
-	@RequestMapping("/")
-	public String home()
-	{
-		return "home.jsp";
-	}
-
 	// Add Student Details
 	@PostMapping(path = "/addStudent")
 	public Student addStudent(@RequestBody Student student) {
