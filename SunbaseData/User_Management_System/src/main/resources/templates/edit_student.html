@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+	
+	<style>
+body {background-color: white;
+      color: black;}
+      .nav-link{
+		  
+	  }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+ 
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/students}">User List</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+	<div class = "container">
+		<div class = "row">
+			<div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+				<h1 class = "text-center"> Update User </h1>
+				<div class = "card-body">
+					<form th:action="@{/students/{id} (id=${student.id})}" th:object = "${student}" method="POST">
+						<div class ="form-group">
+							
+							<input
+							type = "text"
+							name = "firstName"
+							th:field = "*{firstName}"
+							class = "form-control"
+							placeholder="First Name" 
+							/>
+						</div>
+						
+						<div class ="form-group">
+							
+							<input
+							type = "text"
+							name = "lastName"
+							th:field = "*{lastName}"
+							class = "form-control"
+							placeholder="Last Name" 
+							/>
+						</div>
+						<div class ="form-group">
+							
+							<input
+							type = "text"
+							name = "address"
+							th:field = "*{address}"
+							class = "form-control"
+							placeholder="city name" 
+							/>
+						</div>
+						<div class ="form-group">
+							
+							<input
+							type = "text"
+							name = "city"
+							th:field = "*{city}"
+							class = "form-control"
+							placeholder="city name" 
+							/>
+						</div>
+						<div class ="form-group">
+							
+							<input
+							type = "text"
+							name = "state"
+							th:field = "*{state}"
+							class = "form-control"
+							placeholder="state name" 
+							/>
+						</div>
+						
+						<div class ="form-group">
+						
+							<input
+							type = "text"
+							name = "email"
+							th:field = "*{email}"
+							class = "form-control"
+							placeholder="Email" 
+							/>
+						</div>
+						<div class ="form-group">
+							
+							<input
+							type = "text"
+							name = "phono"
+							th:field = "*{phono}"
+							class = "form-control"
+							placeholder="phone number" 
+							/>
+						</div>
+						<div class = "box-footer">
+							<button type="submit" class = "btn btn-primary">
+								Submit
+							</button>
+						</div>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
