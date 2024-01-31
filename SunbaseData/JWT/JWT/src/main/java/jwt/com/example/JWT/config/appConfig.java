@@ -18,8 +18,9 @@ public class appConfig {
     public UserDetailsService userDetailsService(){
         UserDetails user1 = User.builder().username("sanjit").password(passwordEncoder().encode("sanjit")).roles("admin").build();
         UserDetails user2 = User.builder().username("nikesh").password(passwordEncoder().encode("nikesh")).roles("admin").build();
+        UserDetails user3 = User.builder().username("aditya").password(passwordEncoder().encode("aditya")).roles("admin").build();
 
-        return new InMemoryUserDetailsManager(user1,user2);
+        return new InMemoryUserDetailsManager(user1,user2,user3);
     }
     @Bean
 public PasswordEncoder passwordEncoder(){
